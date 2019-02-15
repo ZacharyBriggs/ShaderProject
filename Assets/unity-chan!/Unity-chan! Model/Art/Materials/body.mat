@@ -43,10 +43,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Amount: 1
+    - Amount: 0.1
     - Amplitude: 1
-    - Distance: 1
-    - Speed: 1
+    - Distance: 0.1
+    - Speed: 10
     - _EdgeThickness: 0.5
     - _FalloffPower: 0.3
     - _Glossiness: 0.5

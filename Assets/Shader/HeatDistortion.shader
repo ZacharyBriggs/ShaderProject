@@ -1,12 +1,12 @@
-﻿Shader "Unlit/HeatDistortion"
+﻿Shader "Zach/Unlit/HeatDistortion"
 {
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
-		Distance("Distance", Float) = 1
+		Distance("Distance", Float) = 0.1
 		Amplitude("Amplitude", Float) = 1
-		Speed("Speed",Float) = 1
-		Amount("Amount", Float) = 1
+		Speed("Speed",Float) = 10
+		Amount("Amount", Float) = 0.1
 	}
 	SubShader
 	{
