@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: eyebase
-  m_Shader: {fileID: 4800000, guid: 829d04e5e4ec3df468cbb8ac0340b706, type: 3}
+  m_Shader: {fileID: 4800000, guid: 6b417fdef72b15f418ebb73ba7d3c6d4, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -34,10 +34,12 @@ Material:
     - Amount: 0.1
     - Amplitude: 1
     - Distance: 0.1
+    - OutlineThickness: 1
     - Speed: 10
     - _FalloffPower: 1
     - _Glossiness: 0.5
     - _Metallic: 0
     m_Colors:
+    - OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0.8, g: 0.8, b: 1, a: 1}

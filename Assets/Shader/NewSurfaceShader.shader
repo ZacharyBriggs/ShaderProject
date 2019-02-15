@@ -1,4 +1,4 @@
-﻿Shader "Zach/Surace/PracticeSurfaceShader" {
+﻿Shader "Zach/Surface/PracticeSurfaceShader" {
 	Properties 
 	{
 		_Color ("Color", Color) = (1,1,1,1)

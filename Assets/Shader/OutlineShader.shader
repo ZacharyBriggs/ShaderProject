@@ -4,17 +4,15 @@
 	{
 		_MainTex ("Texture", 2D) = "white" {}
 		OutlineColor("Outline Color", Color) = (0,0,0,1)
-		OutlineThickness("Outline Thickness", float) = 1
+		OutlineThickness("Outline Thickness", Range(1,1.10)) = 1
 	}
 	SubShader
 	{
 		Tags { "RenderType"="Opaque" }
 		LOD 100
-
 		Pass
 		{
-			Cull Front
-			ZTest Off
+			Offset 2,2
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
@@ -44,9 +42,9 @@
 			v2f vert (appdata v)
 			{
 				v2f o;
+				o.vertex.x *= OutlineThickness;
 				o.vertex = UnityObjectToClipPos(v.vertex);
 				o.uv = TRANSFORM_TEX(v.uv, _MainTex);
-				o.vertex.z *= OutlineThickness;
 				UNITY_TRANSFER_FOG(o,o.vertex);
 				return o;
 			}
@@ -63,8 +61,6 @@
 		}
 		Pass
 		{
-			Cull Back
-			ZTest LEqual
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
